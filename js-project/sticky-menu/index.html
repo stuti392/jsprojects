@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky-Navbar</title>
+
+    <style>
+
+        body{
+            margin: 0;
+        }
+
+        #header{
+            text-align: center;
+        }
+
+        #logo{
+            width: 150px;
+            height: auto;
+        }
+
+        #menu-bar{
+            text-align: center;
+            background-color: coral;
+        }
+
+        #menu-bar li{
+            display: inline-block;
+            padding: 15px 10px;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        #container{
+            text-align: center;
+            padding: 50px 100px;
+        }
+
+        #abt-img{
+            width: 100%;
+        }
+
+        .sticky{
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <div id="header">
+        <img src="./img/medcare.png" alt="" id="logo">
+    </div>
+
+    <nav id="menu-bar">
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Client</li>
+        <li>Contact Us</li>
+    </nav>
+
+    <div id="container">
+        <h1>About us</h1>
+        <img src="./img/bg.png" alt="" id="abt-img">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates omnis eius facere sunt aspernatur accusantium. Deserunt error officiis quia voluptates perspiciatis itaque sit commodi facere sapiente repellat facilis rem nemo tempore quidem explicabo eos laborum eius repudiandae nostrum amet, eaque maxime ex consequatur nesciunt? Ut quidem maiores impedit vel repudiandae totam amet iusto hic corporis provident vitae rerum labore minima at officia aliquam, cum dolorum voluptatibus harum exercitationem animi enim similique illo natus! A ea vitae accusantium dicta ipsa omnis aspernatur inventore modi expedita nulla fuga enim animi aliquid provident, similique saepe nisi harum! Repellat corporis voluptas ipsa unde aspernatur, eaque officiis molestiae recusandae, rem asperiores, voluptatem quis. Aliquid at fugit dolorem sapiente expedita quo nemo nulla ex, atque temporibus praesentium inventore reiciendis recusandae pariatur aspernatur modi distinctio architecto voluptatibus commodi suscipit sequi eos! Fugit eius sit vitae dignissimos veritatis vel, temporibus reprehenderit iure ad dolorem, omnis exercitationem distinctio velit reiciendis corporis perspiciatis, animi sunt ipsum dolore ducimus? Veniam fugit porro ratione odio a, ipsa enim temporibus, harum nisi laboriosam cumque, quaerat ad assumenda omnis nostrum in repudiandae sed. Natus laudantium, minus alias adipisci, aliquam commodi rem vitae unde optio doloremque iusto magnam. Libero in vitae id quaerat modi iusto molestias natus ratione quos reprehenderit delectus esse, itaque eaque velit possimus sequi dolorum culpa adipisci eveniet. Aliquid sunt amet dolore fugiat voluptatibus officia nobis mollitia nulla, quibusdam magni id deserunt eaque. Unde ipsam possimus dolor placeat ipsum. Suscipit recusandae excepturi perferendis aliquam saepe magnam quidem adipisci provident, eos deleniti veritatis doloribus pariatur cupiditate aspernatur magni facere. Itaque qui voluptatibus doloribus deserunt necessitatibus quia officia perferendis voluptatem accusantium rem, quo dolor harum. Accusamus, iusto magnam debitis delectus tempore ipsam beatae voluptates aspernatur incidunt placeat modi quia sequi hic, aut temporibus vel minus, voluptate mollitia. Quidem delectus similique aspernatur, enim qui saepe omnis. Similique aperiam voluptatibus vel minima mollitia blanditiis, veritatis atque in iusto distinctio, minus corrupti ullam accusamus dolore et expedita ab vitae laboriosam officiis voluptates, commodi labore inventore hic aspernatur. Ullam nisi soluta ea ab repellat similique, debitis fugit maxime? Consequatur officia ullam quod excepturi ipsam veniam, magni sequi dicta fugiat atque similique reiciendis, esse cum illo dolorum eos! Libero magni suscipit pariatur voluptate, recusandae consectetur animi reiciendis vitae excepturi nemo, doloribus laborum vero est perspiciatis aliquid quisquam sed autem ipsam soluta illo reprehenderit! Quibusdam delectus possimus sit. Veritatis iste eligendi odit quibusdam accusantium voluptate tenetur earum. Numquam dolorum nam magni, ipsum architecto maxime dolores, laudantium placeat ipsam quasi vero fuga? Alias pariatur deserunt distinctio quod laboriosam tempore quia harum sapiente incidunt officiis nam illum natus unde aut reprehenderit nisi, commodi dolorum labore fugiat repellat expedita. Facilis saepe eligendi, excepturi blanditiis omnis, inventore eius minus beatae dolorum iste corporis, tenetur rerum quis dicta quidem in. Molestias voluptate temporibus, rerum dolor quasi fugiat eaque vitae quidem expedita, harum dicta et quas blanditiis dolores corrupti non, quisquam nisi molestiae. Voluptatem, veniam porro repellendus illo debitis aspernatur tenetur laborum, quas quibusdam reprehenderit reiciendis eaque dignissimos at voluptatum odio. Quos aperiam totam tempora consectetur?</p>
+    </div>
+
+    <script>
+
+        window.addEventListener('scroll', function(){
+
+            let navbar = document.getElementById('menu-bar');
+
+             if(window.pageYoffset >= 168){
+
+                navbar.classList.add('sticky');
+
+                
+             }
+             else{
+                navbar.classList.remove('sticky');
+             }
+
+
+
+
+        });
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
